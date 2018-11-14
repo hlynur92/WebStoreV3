@@ -23,4 +23,7 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
 
+  NavigateSignup(){
+    console.log('No Signup Page Implemented yet!')
+  }
 }

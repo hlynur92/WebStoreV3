@@ -14,10 +14,10 @@
 
 
 <ion-content padding>
-  <ion-label full>Username</ion-label>
-  <ion-input full type="text" name="username" placeholder="Input Username..."></ion-input>
-  <ion-label full >Password</ion-label>
-  <ion-input full type="password" name="password" placeholder="Input Password..." ></ion-input>
+  <ion-label full text-center>Username</ion-label>
+  <ion-input full text-center border="1px" type="text" name="username" placeholder="Input Username..."></ion-input>
+  <ion-label full text-center >Password</ion-label>
+  <ion-input full text-center border="thick" type="password" name="password" placeholder="Input Password..." ></ion-input>
   <button ion-button full color="default">Login!</button>
-  <button ion-button full color="default">Signup!</button>
+  <button ion-button full color="default" (click)="NavigateSignup()">Signup!</button>
 </ion-content>
