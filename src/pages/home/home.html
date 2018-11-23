@@ -8,6 +8,28 @@
 
 <ion-content padding>
 
-  <button ion-button full color="default" (click)="NavigateLogin()">Login Screen Navigation!</button>
+  <button ion-button full color="default" (click)="NavigateLogin()">Login</button>
+  <button ion-button full color="default" >Cart</button>
+  <button ion-button full color="default" >Filter</button>
+
+  <button onclick="listView()"><i class="fa fa-bars"></i> List</button>
+  <button onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2>Product Name 1</h2>
+      <p>Product Description..</p>
+
+      <p>Product Price..</p>
+      <button ion-button color="default" >Add to Cart</button>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+      <h2>Product Name 1</h2>
+      <p>Product Description..</p>
+
+      <p>Product Price..</p>
+      <button ion-button color="default" >Add to Cart</button>
+    </div>
+  </div>
 
 </ion-content>
