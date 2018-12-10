@@ -7,13 +7,18 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
+import { CartPage} from "../pages/cart/cart";
 import { HttpClientModule } from '@angular/common/http';
 import { ApiProvider } from '../providers/api/api';
+import {CheckOutPage} from "../pages/check-out/check-out";
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage,
+    CartPage,
+    CheckOutPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +28,10 @@ import { ApiProvider } from '../providers/api/api';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage,
+    CartPage,
+    CheckOutPage
   ],
   providers: [
     StatusBar,

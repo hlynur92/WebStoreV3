@@ -9,10 +9,16 @@
 <ion-content padding>
 
   <button ion-button full color="default" (click)="NavigateLogin()">Login</button>
-  <button ion-button full color="default" >Cart</button>
+  <button ion-button full color="default" (click)="NavigateCart()">Cart</button>
   <button ion-button full color="default" >Filter</button>
 
   <ion-list>
-    <ion-item *ngFor="let product of products"> <h2>{{product.ProductName}}</h2> </ion-item>
+    <ion-item *ngFor="let product of products2">
+      <h2>{{product.ProductName}}</h2>
+      <p>{{product.ProductDesc}}</p>
+      <p>{{product.ProductType}}</p>
+      <p>{{product.ProductPrice}}</p>
+      <button ion-button color="default" (click)="AddToCart(this.product.ProductName, this.product.ProductDesc, this.product.ProductType, this.product.ProductPrice)">Add to Cart</button>
+    </ion-item>
   </ion-list>
 </ion-content>

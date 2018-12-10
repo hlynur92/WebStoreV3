@@ -8,7 +8,7 @@ export class ApiProvider {
 
   }
 
-  GetProducts(){
+   GetProducts(){
     return this.http.get('http://localhost:17899/api/Store/products');
   }
 }
