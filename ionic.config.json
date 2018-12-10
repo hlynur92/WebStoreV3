@@ -2,5 +2,11 @@
   "name": "WebStoreV3",
   "app_id": "",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {},
+  "proxies": [
+    {
+      "path":"/api",
+      "proxyUrl": "http://localhost:17899/api"
+    }
+  ]
 }

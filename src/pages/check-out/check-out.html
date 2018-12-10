@@ -15,52 +15,55 @@
 <ion-content padding>
 
   <ion-item>
-    <ion-label color="primary">Address</ion-label>
+    <ion-label color="primary"><h1>Address</h1></ion-label>
   </ion-item>
 
   <ion-item>
     <ion-label color="primary">Country</ion-label>
-    <ion-input placeholder="Text Input"></ion-input>
+    <ion-input placeholder="Text Input"  [(ngModel)]="order.Country"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label color="primary">Street</ion-label>
-    <ion-input placeholder="Text Input"></ion-input>
+    <ion-input placeholder="Text Input" [(ngModel)]="order.Street"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label color="primary">Postal Code</ion-label>
-    <ion-input placeholder="Text Input"></ion-input>
+    <ion-input placeholder="Text Input" [(ngModel)]="order.PostalCode"></ion-input>
   </ion-item>
 
+  <br>
 
   <ion-item>
-    <ion-label color="primary">Card Information</ion-label>
+    <ion-label color="primary"><h1>Card Information</h1></ion-label>
   </ion-item>
 
 
   <ion-item>
     <ion-label color="primary">Card Type</ion-label>
-    <ion-input placeholder="Text Input"></ion-input>
+    <ion-input placeholder="Text Input" [(ngModel)]="order.CardType"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label color="primary">Card Number</ion-label>
-    <ion-input placeholder="Text Input"></ion-input>
+    <ion-input placeholder="Text Input" [(ngModel)]="order.CardNumber"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label color="primary">Card Name</ion-label>
-    <ion-input placeholder="Text Input"></ion-input>
+    <ion-input placeholder="Text Input" [(ngModel)]="order.CardName"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label color="primary">Card CVC</ion-label>
-    <ion-input placeholder="Text Input"></ion-input>
+    <ion-input placeholder="Text Input" [(ngModel)]="order.CardCVC"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label color="primary">Card Expiration</ion-label>
-    <ion-input placeholder="Text Input"></ion-input>
+    <ion-input placeholder="Text Input" [(ngModel)]="order.CardExpiration"></ion-input>
   </ion-item>
+
+  <button ion-button full color="default" (click)="ConfirmCheckOut()">Confirm</button>
 </ion-content>

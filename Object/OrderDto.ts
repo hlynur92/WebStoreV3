@@ -16,83 +16,83 @@ export class OrderDto {
 
   }
 
-  get orderPrice(): number {
+  get OrderPrice(): number {
     return this._orderPrice;
   }
 
-  set orderPrice(value: number) {
+  set OrderPrice(value: number) {
     this._orderPrice = value;
   }
 
-  get country(): string {
+  get Country(): string {
     return this._country;
   }
 
-  set country(value: string) {
+  set Country(value: string) {
     this._country = value;
   }
 
-  get street(): string {
+  get Street(): string {
     return this._street;
   }
 
-  set street(value: string) {
+  set Street(value: string) {
     this._street = value;
   }
 
-  get postalCode(): string {
+  get PostalCode(): string {
     return this._postalCode;
   }
 
-  set postalCode(value: string) {
+  set PostalCode(value: string) {
     this._postalCode = value;
   }
 
-  get products(): ProductDto[] {
+  get Products(): ProductDto[] {
     return this._products;
   }
 
-  set products(value: ProductDto[]) {
+  set Products(value: ProductDto[]) {
     this._products = value;
   }
 
-  get cardType(): string {
+  get CardType(): string {
     return this._cardType;
   }
 
-  set cardType(value: string) {
+  set CardType(value: string) {
     this._cardType = value;
   }
 
-  get cardNumber(): string {
+  get CardNumber(): string {
     return this._cardNumber;
   }
 
-  set cardNumber(value: string) {
+  set CardNumber(value: string) {
     this._cardNumber = value;
   }
 
-  get cardName(): string {
+  get CardName(): string {
     return this._cardName;
   }
 
-  set cardName(value: string) {
+  set CardName(value: string) {
     this._cardName = value;
   }
 
-  get cardCVC(): string {
+  get CardCVC(): string {
     return this._cardCVC;
   }
 
-  set cardCVC(value: string) {
+  set CardCVC(value: string) {
     this._cardCVC = value;
   }
 
-  get cardExpiration(): string {
+  get CardExpiration(): string {
     return this._cardExpiration;
   }
 
-  set cardExpiration(value: string) {
+  set CardExpiration(value: string) {
     this._cardExpiration = value;
   }
 }
