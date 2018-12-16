@@ -12,31 +12,27 @@ import {CartPage} from "../cart/cart";
   templateUrl: 'home.html'
 })
 export class HomePage {
-  products: Observable<any>;
-  products2: ProductDto[];
+  observer: Observable<any>;
+  products: ProductDto[];
   cart: ProductDto[];
 
   constructor(public navCtrl: NavController, public ApiProvider: ApiProvider) {
-    this.products = this.ApiProvider.GetProducts();
-    this.products.subscribe(products => {
-      this.products2 = products;
-      console.log(this.products2);
+    //Calls the method GetProducts from the ApiProvider
+    this.observer = this.ApiProvider.GetProducts();
+
+    //The Observable Products is a collection of events in this case it has the event GetProducts which has the data from the get request.
+    //by subscriping to the observable I create an instance of the data which I set Products to be equal too.
+    this.observer.subscribe(p => {
+      this.products = p;
+      console.log(this.products);
       this.cart = [];
     });
-
-    /*
-    this.products.subscribe(data =>
-    {
-      console.log('my data: ', data);
-    });
-    */
   }
 
   AddToCart(ProductName, ProductDesc, ProductType, ProductPrice){
     console.log(ProductName , " " , ProductDesc , " " , ProductType , " " , ProductPrice);
 
     var temp = new ProductDto();
-
 
     temp.SetProductName(ProductName);
     temp.SetProductDesc(ProductDesc);
@@ -45,7 +41,6 @@ export class HomePage {
     temp.SetProductQuantity("1");
 
     this.cart.push(temp);
-
 
     console.log("The Cart " , this.cart);
   }

@@ -19,7 +19,7 @@ export class CartPage {
   products : ProductDto[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    //this.products = [];
+    //Sets the Products Array to be equal to the data given in the navigation parameter
     this.products = this.navParams.data;
     console.log("Cart Page " , this.products);
   }
@@ -32,5 +32,3 @@ export class CartPage {
     this.navCtrl.push(CheckOutPage, this.products);
   }
 }
-/*
- */
